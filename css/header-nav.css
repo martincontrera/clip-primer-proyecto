@@ -1,0 +1,76 @@
+header{
+  display: flex;
+  /* flex-direction: row;
+  justify-content: space-between;*/
+  align-items: center;
+  background: #25333d;
+  height: 8vh;
+  width: 100%;
+}
+
+header .logo{
+  width: 20%;
+  display: flex;
+  /* width: 60px; */
+  /* justify-content: center; */
+}
+
+header .logo h2{
+  display: flex;
+  align-items: center;
+  color: #a7adb1;
+}
+
+header .logo picture img{
+  width: 80px;
+  margin-right: -10px;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+header nav .menu{
+  display: flex;
+  width: 55%;
+}
+
+header nav .cta-menu{
+  display: flex;
+  width: 25%;
+}
+
+header nav ul li{
+  margin-right: 45px;
+  display: flex;
+  align-items: center;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  font-size: .9rem;
+  font-family: 'Lato', sans-serif;
+  cursor: pointer;
+}
+
+header nav ul li a:hover{
+  color: white;
+}
+
+/* nav ul li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+nav li a{
+  color: #a7adb1;
+}
+
+h1{
+  color: green;
+  font-weight: 900;
+  font-size: 1rem;
+}
