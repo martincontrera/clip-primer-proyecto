@@ -1,0 +1,10 @@
+#features-section ul {
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  
+}
+#features-section  ul li{
+      height: 200px;
+    }
