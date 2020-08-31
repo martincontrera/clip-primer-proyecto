@@ -5,6 +5,8 @@
   position: relative;
   z-index: -5;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   /* align-items: center; */
   justify-content: center;
   /* background: rgb(28,70,144); */
@@ -30,6 +32,7 @@
   font-weight: 700;
   width: 60%;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 #hero-section h2{
@@ -39,6 +42,7 @@
   font-size: 1.7rem;
   width: 60%;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 #hero-section .cta-button{

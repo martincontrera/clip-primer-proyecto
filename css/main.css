@@ -3,6 +3,8 @@
 @import "header-nav.css";
 @import "hero-section.css";
 @import "features-section.css";
+@import "how-it-works-section.css";
+
 
 *{
 	box-sizing: border-box;
