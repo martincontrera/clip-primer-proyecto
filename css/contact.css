@@ -2,11 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
 @import "reset.css";
 @import "header-nav.css";
-@import "hero-section.css";
-@import "features-section.css";
-@import "how-it-works-section.css";
-@import "footer.css";
 
+#form{
+  background: #f3f6fb;
+  padding: 60px 0px;
+}
+
+#form h1{
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+}
 
 *{
   box-sizing: border-box;
@@ -47,6 +52,11 @@ header .mobile-nav{
   header .mobile-nav .nav-item a{
     display: inline-block;
     width: 100%;
+  }
+
+  #form h1{
+    font-size: 2rem;
+    margin-bottom: 25px;
   }
 }
 /* body{

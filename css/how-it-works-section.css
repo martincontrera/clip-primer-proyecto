@@ -5,9 +5,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 100px 0px;
+  /* margin: 100px 0px; */
   background: #f3f6fb;
-  padding: 50px 0px;
+  padding: 80px 0px;
 }
 
 /* #how-it-works .transition-step-line .tsl-fpart{
@@ -36,7 +36,7 @@
 #how-it-works h1{
   font-size: 2rem;
   font-weight: 700;
-  color: black;
+  color: #2c2f31;
   margin-bottom: 50px;
 }
 
@@ -62,7 +62,7 @@
 }
 
 #how-it-works .step-1-info-container .step-1{
-  background: red;
+  background: #1daddb;
   color: white;
   width: 50px;
   height: 50px;
@@ -72,10 +72,15 @@
   border-radius: 50%;
   font-size: 1.5rem;
   margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
 }
+
 #how-it-works .step-1-info-container .step-1-description p{
   text-align: center;
   line-height: 1.6;
+  font-size: 1.1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
 /* #how-it-works .row .offset-sm-1, maybe later uncomment this styles
@@ -98,6 +103,10 @@
   font-size: 1.1rem;
 }
 
+#how-it-works  .step-1-img table{
+  width: 100%;
+}
+
 #how-it-works  .step-1-img table,
 #how-it-works  .step-1-img table tr td{
   border-bottom: 1px solid black;
@@ -118,6 +127,11 @@
 #how-it-works  .step-1-img table tr td .cell-info{
   background: transparent;
   color:blue;
+  text-align: right;
+}
+
+#how-it-works  .step-1-img table tr td .cell-info-1{
+  display: -webkit-inline-box;
 }
 
 #how-it-works  .step-1-img table tr td .cell-info .x,
@@ -142,7 +156,7 @@
 }
 
 #how-it-works  .step-1-img table tr td .cell-info .plus{
-  margin-left: 40px;
+  /* margin-left: 40px; */
   padding: 3px 8px;
   border: 1px solid blue;
   border-radius: 50%;
@@ -186,7 +200,7 @@
 }
 
 #how-it-works .step-2-container .step-2-info-container .step-2{
-  background: red;
+  background: #1daddb;
   color: white;
   width: 50px;
   height: 50px;
@@ -196,10 +210,14 @@
   border-radius: 50%;
   font-size: 1.5rem;
   margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
 }
 #how-it-works .step-2-container .step-2-info-container .step-2-description p{
   text-align: center;
   line-height: 1.6;
+  font-size: 1.1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
 /* #how-it-works .row .offset-sm-1,/*maybe comment this because repeated
@@ -238,8 +256,21 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 1px solid black;
+  border: 1px solid #293035;
+  border-radius: 5px;
   background: white;
+  display: flex;
+  width: fit-content;
+  font-size: 1.2rem;
+  font-weight: 500;
+  /* padding: 15px 20px; */
+  padding: 15px 10px;
+  color: #293035;
+}
+
+#how-it-works .step-2-container .step-2-img .personal-schedule-link i{
+  color: green;
+  margin-right: 10px;
 }
 
 #how-it-works .container .row .transition-step2-3{
@@ -273,7 +304,7 @@
 }
 
 #how-it-works .step-3-container .step-3-info-container .step-3{
-  background: red;
+  background: #1daddb;
   color: white;
   width: 50px;
   height: 50px;
@@ -283,10 +314,14 @@
   border-radius: 50%;
   font-size: 1.5rem;
   margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
 }
 #how-it-works .step-3-container .step-3-info-container .step-3-description p{
   text-align: center;
   line-height: 1.6;
+  font-size: 1.1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
 #how-it-works .step-3-container .step-3-img{
