@@ -79,17 +79,17 @@ console.log(guess_answer)
 // array_of_guesses.splice(random_number, 1);
 // max--;
 
-const guess_text = document.querySelector(".guess-text");
+let guess_text = document.querySelector(".guess-text");
 guess_text.innerHTML = guess_description;
 let right_answer = document.querySelector(".right-answer");
 right_answer.innerHTML = guess_answer; //no borrar
 
-const user_answer = document.querySelector(".user-answer");
+let user_answer = document.querySelector(".user-answer");
 const answer_input = document.querySelector(".answer-input");
 const guess_btn = document.querySelector(".guess-btn");
-const chances_left = document.querySelector(".chances-left");
-const pista_1 = document.querySelector(".clue1");
-const pista_2 = document.querySelector(".clue2");
+let chances_left = document.querySelector(".chances-left");
+let pista_1 = document.querySelector(".clue1");
+let pista_2 = document.querySelector(".clue2");
 
 pista_1.innerHTML = array_of_guesses[random_number][2];
 pista_2.innerHTML = array_of_guesses[random_number][3];
@@ -120,12 +120,35 @@ let right_sfx = document.querySelector(".right-sfx");
 right_sfx.style.display = "none";
 let winner_sfx = document.querySelector(".winner-sfx");
 winner_sfx.style.display = "none";
+let loser_sfx = document.querySelector(".loser-sfx");
+loser_sfx.style.display = "none";
+let berserk_op = document.querySelector(".berserk-op");
+berserk_op.style.display = "none";
+let vinland_saga_op = document.querySelector(".vinland-saga-op");
+vinland_saga_op.style.display = "none";
+let evangelion_op = document.querySelector(".evangelion-op");
+evangelion_op.style.display = "none";
+
+array_of_songs = [
+  vinland_saga_op,
+  berserk_op,
+  evangelion_op
+]
+
 
 let rules = document.getElementsByClassName("rules");
 let guess_number = document.querySelector(".guess-number");
 let you_lose_btn = document.querySelector(".you-lose");
 
 let buy_try = document.querySelector(".buy-try");
+
+let game_section = document.getElementById("game-section");
+let game_container = document.querySelector(".container");
+let guess_title = document.getElementsByClassName("guess-title");
+let user_answer_generic = document.querySelector(".user-answer-generic");
+let chances = document.querySelector(".chances");
+let main_guess_title = document.querySelector(".main-guess-title");
+let score = document.querySelector(".score");
 
 //let user_answer_result = document.querySelector(".user-answer-result");
 
@@ -219,6 +242,25 @@ const change_guess = () =>{
   pista_1.style.visibility = "hidden";
   pista_2.style.visibility = "hidden";
   //console.log(guess_answer);
+  if(array_of_guesses.length == 1){
+    array_of_songs[1].pause();
+    array_of_songs[2].play();
+    game_section.classList.add("evangelion");
+    game_container.classList.add("evangelion");
+  }
+  if(array_of_guesses.length == 2){
+    array_of_songs[0].pause();
+    array_of_songs[1].play();
+    game_section.classList.add("berserk");
+    game_container.classList.add("berserk");
+  }
+  if(array_of_guesses.length == 3){
+    array_of_songs[0].play();
+    game_section.classList.add("vinland");
+    game_container.classList.add("vinland");
+  }
+  console.log("ESTE ES EL NUMERO DE RESTANTES:");
+  console.log(array_of_guesses.length);
   array_of_guesses.splice(random_number, 1);
   //console.log(array_of_guesses.length);
   guess_text.innerHTML = guess_description;
@@ -239,7 +281,22 @@ const change_guess = () =>{
   current_guess_number = parseInt(current_guess_number);
   guess_number.innerHTML = current_guess_number + 1;
   buy_try.removeAttribute("disabled");
-  return array_of_guesses[random_number][1];
+  game_section.classList.add("palette6");
+  game_container.classList.add("palette6");
+  guess_text.classList.add("palette6");
+  pista_1.classList.add("palette6");
+  pista_2.classList.add("palette6");
+  guess_title[0].classList.add("palette6");
+  guess_title[1].classList.add("palette6");
+  user_answer_generic.classList.add("palette6");
+  user_answer.classList.add("palette6");
+  chances.classList.add("palette6");
+  chances_left.classList.add("palette6");
+  main_guess_title.classList.add("palette6");
+  score.classList.add("palette6");
+  score_number.classList.add("palette6");
+
+  // return array_of_guesses[random_number][1];
 }
 
 //let winner_name = document.querySelector(".winner-name");
