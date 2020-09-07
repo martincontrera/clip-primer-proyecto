@@ -71,7 +71,10 @@
   #features-section .container .box3{
     margin-bottom: 80px;
   }
-
+  #features-section .container h1{
+    font-size: 1.7rem;
+    margin-bottom: 50px;
+  }
   /* #features-section .container .box21,
   #features-section .container .box22,
   #features-section .container .box23{

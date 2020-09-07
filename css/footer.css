@@ -45,6 +45,10 @@ footer .social-media-links li{
   font-size: 3rem;
 }
 
+footer .social-media-links li a:hover{
+  color: #0b4bff; /*#00c5ff;*/
+}
+
 footer h2{
   display: flex;
   justify-content: center;
@@ -60,5 +64,11 @@ footer h2{
     margin-top: 40px;
     display: flex;
     justify-content: center;
+  }
+  footer .social-media-links ul li:nth-child(3){
+    margin-right: 0px;
+  }
+  #footer h2{
+    font-size: .9rem;
   }
 }

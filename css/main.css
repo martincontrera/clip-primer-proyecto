@@ -6,6 +6,7 @@
 @import "features-section.css";
 @import "how-it-works-section.css";
 @import "footer.css";
+@import "reviews.css";
 
 
 *{
@@ -46,7 +47,7 @@ header .mobile-nav{
   }
   header .mobile-nav .nav-item a{
     display: inline-block;
-    width: 100%;
+    /* width: 100% or auto */
   }
 }
 /* body{
